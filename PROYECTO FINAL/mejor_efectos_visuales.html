@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mejores Efectos Visuales - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+   
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <h1>Mejores Efectos Visuales</h1>
+  </header>
+  <section class="nominations">
+   
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.c2DE-TSHhob9BCDTivhiNQHaK-?rs=1&pid=ImgDetMain" alt="The Creator">
+      <div class="nominee-name">The Creator<br/>Jay Cooper, Ian Comley, Andrew Roberts y Neil Corbould</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.MdcWUGZjTyK-bNk3_g9dIwHaLH?rs=1&pid=ImgDetMain" alt="Guardianes de la Galaxia Vol. 3">
+      <div class="nominee-name">Guardianes de la Galaxia Vol. 3<br/>Stephane Ceretti, Alexis Wajsbrot, Guy Williams y Theo Bialek</div>
+    </div>
+     <div class="nominee ganador">
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/07/godzilla-minus-one-movie-poster.jpg" alt="Godzilla Minus One">
+      <div class="nominee-name">Godzilla Minus One<br/>Takashi Yamazaki, Kiyoko Shibuya, Masaki Takahashi y Tatsuji Nojima</div>
+    </div>
+    <div class="nominee">
+      <img src="https://es.web.img3.acsta.net/pictures/23/06/12/14/57/1146587.jpg" alt="Misión: Imposible - Sentencia Mortal Parte 1">
+      <div class="nominee-name">Misión: Imposible - Sentencia Mortal Parte 1<br/>Alex Wuttke, Simone Coco, Jeff Sutherland y Neil Corbould</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.soNdNdG89UtAlavS34lFrwHaKe?rs=1&pid=ImgDetMain" alt="Napoleón">
+      <div class="nominee-name">Napoleón<br/>Charley Henley, Luc-Ewen Martin-Fenouillet, Simone Coco y Neil Corbould</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

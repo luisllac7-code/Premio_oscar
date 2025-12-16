@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mejor Cortometraje Documental - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+    
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+   
+  <header>
+    <h1>Mejor Cortometraje Documental</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee ganador">
+      <img src="https://th.bing.com/th/id/OIP.Nuf628qGjrAFA0gOtwo-yQHaK9?rs=1&pid=ImgDetMain" alt="The Last Repair Shop">
+      <div class="nominee-name">The Last Repair Shop<br/>Dir. Ben Proudfoot y Kris Bowers</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.P5maWCijTdRqZgjA0R-yNwHaLH?rs=1&pid=ImgDetMain" alt="The ABCs of Book Banning">
+      <div class="nominee-name">The ABCs of Book Banning<br/>Dir. Trish Adlesic, Nazenet Habtezghi y Sheila Nevins</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.6bSWflOAFB80UF4g1ictJQHaLH?rs=1&pid=ImgDetMain" alt="The Barber of Little Rock">
+      <div class="nominee-name">The Barber of Little Rock<br/>Dir. John Hoffman y Christine Turner</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.vilpvrwkgROS-PsD4BkpzgHaLK?rs=1&pid=ImgDetMain" alt="Island in Between">
+      <div class="nominee-name">Island in Between<br/>Dir. S. Leo Chiang</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.js_hWi4RVFbnS0DD-EJX6wHaK-?rs=1&pid=ImgDetMain" alt="Nai Nai & Wài Pó">
+      <div class="nominee-name">Nai Nai & Wài Pó<br/>Dir. Sean Wang</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

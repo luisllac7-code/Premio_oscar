@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mejor Cortometraje Animado - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+   
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <h1>Mejor Cortometraje Animado</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee ganador">
+      <img src="https://m.media-amazon.com/images/M/MV5BZWMxNzhhZTItMzYzMC00NDIzLWJlMmItNTBmYTdlOTYxYWEyXkEyXkFqcGdeQXVyNTU4MTc2MjE@._V1_FMjpg_UX1000_.jpg" alt="War Is Over! Inspired by the Music of John & Yoko">
+      <div class="nominee-name">War Is Over! Inspired by the Music of John & Yoko<br/>Dir. Dave Mullins</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.29t715z_yRBSJvfDOOC0vAHaLG?rs=1&pid=ImgDetMain" alt="Letter to a Pig">
+      <div class="nominee-name">Letter to a Pig<br/>Dir. Tal Kantor</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.VhHGnF5JFuHXZN8xZIQHLAHaLE?rs=1&pid=ImgDetMain" alt="Ninety-Five Senses">
+      <div class="nominee-name">Ninety-Five Senses<br/>Dirs. Jared Hess & Jerusha Hess</div>
+    </div>
+    <div class="nominee">
+      <img src="https://images.justwatch.com/poster/315692151/s718/our-uniform.jpg" alt="Our Uniform">
+      <div class="nominee-name">Our Uniform<br/>Dir. Yegane Moghaddam</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.Eh4u_bWSQBvop4-0oTuBsQHaKt?rs=1&pid=ImgDetMain" alt="Pachyderme">
+      <div class="nominee-name">Pachyderme<br/>Dir. Stéphanie Clément</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

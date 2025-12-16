@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌟Las nominadas al Oscar 2024🌟</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px 10px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    p.description {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+
+    .category {
+      font-size: 1.2em;
+      text-decoration: none;
+      color: gold;
+      border: 2px solid gold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s, color 0.3s;
+      display: block;
+    }
+
+    .category:hover {
+      background-color: gold;
+      color: black;
+    }
+
+    #rating-section {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.2em;
+    }
+
+    #stars {
+      font-size: 2em;
+      color: gold;
+      cursor: pointer;
+    }
+
+    .star {
+      padding: 0 5px;
+      transition: transform 0.2s;
+    }
+
+    .star:hover {
+      transform: scale(1.2);
+    }
+
+    .star.filled {
+      color: gold;
+    }
+
+    #rating-message {
+      margin-top: 10px;
+      font-size: 1em;
+      color: rgb(158, 144, 238);
+    }
+
+    #comments-section {
+      text-align: left;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #comments-section h2,
+    #comments-section h3 {
+      color: gold;
+    }
+
+    #comment-form input,
+    #comment-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    #comment-form button {
+      padding: 8px 16px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    #comments-list div {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Las nominadas al Oscar 2024</h1>
+    <p class="description">
+      La edición 96 de los Premios Oscar celebra lo mejor del cine mundial.
+      Desde conmovedoras interpretaciones hasta guiones brillantes y
+      producciones visualmente impactantes, descubre a los artistas y
+      películas que marcaron el año y compiten por el galardón más prestigioso
+      del séptimo arte 🎬🏆🎭.
+    </p>
+  </header>
+  <section class="categories">
+    <a class="category" href="mejor_pelicula.html">Mejor Película</a>
+    <a class="category" href="mejor_director.html">Mejor Director</a>
+    <a class="category" href="mejor_actor.html">Mejor Actor</a>
+    <a class="category" href="mejor_actriz.html">Mejor Actriz</a>
+    <a class="category" href="mejor_actor_reparto.html">Mejor Actor de Reparto</a>
+    <a class="category" href="mejor_actriz_reparto.html">Mejor Actriz de Reparto</a>
+    <a class="category" href="mejor_guion_original.html">Mejor Guion Original</a>
+    <a class="category" href="mejor_guion_adaptado.html">Mejor Guion Adaptado</a>
+    <a class="category" href="mejor_pelicula_extranjera.html">Mejor Película Extranjera</a>
+    <a class="category" href="mejor_pelicula_animada.html">Mejor Película Animada</a>
+    <a class="category" href="mejor_pelicula_documental.html">Mejor Película Documental</a>
+    <a class="category" href="mejor_cortometraje_documental.html">Mejor Cortometraje Documental</a>
+    <a class="category" href="mejor_cortometraje.html">Mejor Cortometraje</a>
+    <a class="category" href="mejor_cortometraje_animado.html">Mejor Cortometraje Animado</a>
+    <a class="category" href="mejor_banda_original.html">Mejor Banda Sonora Original</a>
+    <a class="category" href="mejor_cancion_original.html">Mejor Canción Original</a>
+    <a class="category" href="mejor_sonido.html">Mejor Edición de Sonido</a>
+    <a class="category" href="mejor_cinematografia.html">Mejor Fotografía</a>
+    <a class="category" href="mejor_diseño_produccion.html">Mejor Diseño de Producción</a>
+    <a class="category" href="mejor_montaje.html">Mejor Montaje</a>
+    <a class="category" href="mejor_diseño_vestuario.html">Mejor Diseño de Vestuario</a>
+    <a class="category" href="mejor_maquillaje_peluqueria.html">Mejor Maquillaje y Peluquería</a>
+    <a class="category" href="mejor_efectos_visuales.html">Mejores Efectos Visuales</a>
+  </section>
+  <section id="comments-section">
+    <h2>💬 Comentarios de Cinéfilos</h2>
+    <div id="comments-list"></div>
+
+    <div id="comment-form">
+      <h3>Deja tu comentario</h3>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Tu nombre" />
+
+      <label for="country">País:</label>
+      <input type="text" id="country" placeholder="Tu país" />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" placeholder="Tu comentario" rows="4"></textarea>
+
+      <button onclick="addComment()">Enviar comentario</button>
+    </div>
+  </section>
+ <section id="rating-section">
+    <h2>⭐ Califica la página</h2>
+    <p>¿Qué te pareció esta recopilación de los nominados al Oscar 2024?</p>
+    <div id="stars">
+      <span class="star" data-value="1">&#9734;</span>
+      <span class="star" data-value="2">&#9734;</span>
+      <span class="star" data-value="3">&#9734;</span>
+      <span class="star" data-value="4">&#9734;</span>
+      <span class="star" data-value="5">&#9734;</span>
+    </div>
+    <p id="rating-message"></p>
+  </section>
+  <script src="comentarios.js"></script>
+</body>
+</html>

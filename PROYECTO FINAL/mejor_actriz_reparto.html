@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejor Actriz de Reparto - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+   
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+   
+  <header>
+    <h1>Mejor Actriz de Reparto</h1>
+  </header>
+  <section class="nominations">
+   
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/R.069b7bf49c7e7ed8679d302eb7e18d63?rik=RYCy79ejMouQuA&pid=ImgRaw&r=0" alt="Emily Blunt">
+      <div class="nominee-name">Emily Blunt – Oppenheimer</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/R.f2e9f7ab9fb786d81acefc73f67cbe5d?rik=RPGu3%2bTWo3oRgg&pid=ImgRaw&r=0" alt="Danielle Brooks">
+      <div class="nominee-name">Danielle Brooks – The Color Purple</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.e_tFZlbSoG3WB881CVFErgHaLF?rs=1&pid=ImgDetMain" alt="America Ferrera">
+      <div class="nominee-name">America Ferrera – Barbie</div>
+    </div>
+    <div class="nominee">
+      <img src="https://m.media-amazon.com/images/M/MV5BNjhhODJkY2UtZjU4Ny00MjRkLTg5ZWUtZjRjMDBjM2M0ZWE1XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Jodie Foster">
+      <div class="nominee-name">Jodie Foster – Nyad</div>
+    </div>
+     <div class="nominee ganador">
+      <img src="https://th.bing.com/th/id/OIP.1fEG9ARfsM6krGXzu2-0NwHaJ6?rs=1&pid=ImgDetMain" alt="Da'Vine Joy Randolph">
+      <div class="nominee-name">Da'Vine Joy Randolph – The Holdovers</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

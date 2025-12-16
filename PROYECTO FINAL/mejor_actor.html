@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejor Actor - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+    
+    @keyframes resplandor {
+  0%, 100% {
+    box-shadow: 0 0 10px gold, 0 0 20px gold;
+    transform: scale(1.02);
+  }
+  50% {
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+    transform: scale(1.05);
+  }
+}
+
+.ganador {
+  border: 2px solid #ffd700;
+  animation: resplandor 2s infinite;
+}
+
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1>Mejor Actor</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee ganador">
+      <img src="https://th.bing.com/th/id/OIP.CeOsA8hU0tZM8l9xzH-qQgHaLG?cb=iwc2&rs=1&pid=ImgDetMain" alt="Cillian Murphy">
+      <div class="nominee-name">Cillian Murphy – Oppenheimer</div>
+    </div>
+    <div class="nominee">
+      <img src="https://static01.nyt.com/images/2013/06/24/arts/24artsbeat-paul/24artsbeat-paul-superJumbo.jpg" alt="Paul Giamatti">
+      <div class="nominee-name">Paul Giamatti – The Holdovers</div>
+    </div>
+    <div class="nominee">
+      <img src="https://br.web.img3.acsta.net/pictures/19/02/21/10/42/0074317.jpg" alt="Bradley Cooper">
+      <div class="nominee-name">Bradley Cooper – Maestro</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.H8ulbqoiBL1mEqArHDVEBQHaLH?cb=iwc2&rs=1&pid=ImgDetMain" alt="Jeffrey Wright">
+      <div class="nominee-name">Jeffrey Wright – American Fiction</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.pJ1GX-eXhNib4jvuazHLMAHaLH?cb=iwc2&rs=1&pid=ImgDetMain" alt="Colman Domingo">
+      <div class="nominee-name">Colman Domingo – Rustin</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

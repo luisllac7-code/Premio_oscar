@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejor Actor de Reparto - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+ 
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+   
+
+  <header>
+    <h1>Mejor Actor de Reparto</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.7HdGcG87FYbpskJEPqldNwHaJ4?w=827&h=1104&rs=1&pid=ImgDetMain" alt="Sterling K. Brown">
+      <div class="nominee-name">Sterling K. Brown – American Fiction</div>
+    </div>
+    <div class="nominee">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_FMjpg_UX1000_.jpg" alt="Robert De Niro">
+      <div class="nominee-name">Robert De Niro – Killers of the Flower Moon</div>
+    </div>
+    <div class="nominee">
+      <img src="https://s.yimg.com/zb/imgv1/1b633da1-898e-347c-b099-9aa7162d3310/t_1024x1024" alt="Ryan Gosling">
+      <div class="nominee-name">Ryan Gosling – Barbie</div>
+    </div>
+     <div class="nominee ganador">
+      <img src="https://th.bing.com/th/id/OIP.Gt83wjJGqcXw7ApUHVLHjgHaKi?rs=1&pid=ImgDetMain" alt="Robert Downey Jr.">
+      <div class="nominee-name">Robert Downey Jr. – Oppenheimer</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.AoKsVxhgXFU2QxDcH7YcaQAAAA?w=300&h=401&rs=1&pid=ImgDetMain" alt="Mark Ruffalo">
+      <div class="nominee-name">Mark Ruffalo – Poor Things</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mejor Banda Sonora Original - Oscar 2024</title>
+  <style>
+      body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+    
+    @keyframes resplandor {
+      0%, 100% {
+        box-shadow: 0 0 10px gold, 0 0 20px gold;
+        transform: scale(1.02);
+      }
+      50% {
+        box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+        transform: scale(1.05);
+      }
+    }
+    .ganador {
+      border: 2px solid #ffd700;
+      animation: resplandor 2s infinite;
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <h1>Mejor Banda Sonora Original</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee ganador">
+      <img src="https://movies.universalpictures.com/media/opr-tsr1sheet3-look2-rgb-3-1-1-64545c0d15f1e-1.jpg" alt="Oppenheimer">
+      <div class="nominee-name">Oppenheimer - Ludwig Göransson</div>
+    </div>
+    <div class="nominee">
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/09/killers-of-the-flower-moon.jpg" alt="Los asesinos de la luna">
+      <div class="nominee-name">Los asesinos de la luna - Robbie Robertson</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.Qq572EN4Cy32lfNypRPShQHaLH?cb=iwc2&rs=1&pid=ImgDetMain" alt="Pobres criaturas">
+      <div class="nominee-name">Pobres criaturas - Jerskin Fendrix</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.MnmlxS2CBiClDScj3eldFgHaK-?cb=iwc2&rs=1&pid=ImgDetMain" alt="Maestro">
+      <div class="nominee-name">Maestro - Josh Singer y Bradley Cooper</div>
+    </div>
+    <div class="nominee">
+      <img src="https://imagenes.20minutos.es/files/article_default_content/uploads/imagenes/2023/04/07/indiana-jones-poster.jpeg" alt="Indiana Jones y el dial del destino">
+      <div class="nominee-name">Indiana Jones y el dial del destino - John Williams</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>

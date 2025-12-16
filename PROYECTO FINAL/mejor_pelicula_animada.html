@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejor Película Animada - Oscar 2024</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .nominations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .nominee {
+      background-color: #111;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .nominee img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .nominee-name {
+      font-size: 1.1em;
+    }
+    a.back-link {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      color: gold;
+      text-decoration: underline;
+    }
+   
+    @keyframes resplandor {
+  0%, 100% {
+    box-shadow: 0 0 10px gold, 0 0 20px gold;
+    transform: scale(1.02);
+  }
+  50% {
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+    transform: scale(1.05);
+  }
+}
+
+.ganadora {
+  border: 2px solid #ffd700;
+  animation: resplandor 2s infinite;
+}
+
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1>Mejor Película Animada</h1>
+  </header>
+  <section class="nominations">
+    <div class="nominee ganadora">
+      <img src="https://th.bing.com/th/id/OIP.eGJI99yjzpGgczxuOP1JiAHaKl?cb=iwc2&rs=1&pid=ImgDetMain" alt="The Boy and the Heron">
+      <div class="nominee-name">The Boy and the Heron – Japón</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.uVEAg6l1SNB41GnsreEZOAHaLH?cb=iwc2&rs=1&pid=ImgDetMain" alt="Elemental">
+      <div class="nominee-name">Elemental – EE.UU.</div>
+    </div>
+    <div class="nominee">
+      <img src="https://www.24-hdd.com/wp-content/uploads/2023/06/Nimona-2023-%E0%B8%99%E0%B8%B4%E0%B9%82%E0%B8%A1%E0%B8%99%E0%B8%B2.jpg" alt="Nimona">
+      <div class="nominee-name">Nimona – EE.UU.</div>
+    </div>
+    <div class="nominee">
+      <img src="https://th.bing.com/th/id/OIP.tupFpt3x_qmSPuALoMt71wHaKl?cb=iwc2&rs=1&pid=ImgDetMain" alt="Robot Dreams">
+      <div class="nominee-name">Robot Dreams – España</div>
+    </div>
+    <div class="nominee">
+      <img src="https://cosmicbook.news/wp-content/uploads/2023/05/spider-man-across-the-spider-verse-poster-811x1200.jpg" alt="Spider-Man: Across the Spider-Verse">
+      <div class="nominee-name">Spider-Man: Across the Spider-Verse – EE.UU.</div>
+    </div>
+  </section>
+  <a class="back-link" href="index.html">← Volver a la portada</a>
+</body>
+</html>
