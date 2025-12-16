@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -116,9 +117,11 @@
       margin-bottom: 10px;
     }
   </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
+  <header class="fade-in-section">
     <h1>Las nominadas al Oscar 2024</h1>
     <p class="description">
       La edición 96 de los Premios Oscar celebra lo mejor del cine mundial.
@@ -127,6 +130,10 @@
       películas que marcaron el año y compiten por el galardón más prestigioso
       del séptimo arte 🎬🏆🎭.
     </p>
+
+    <div class="search-container">
+      <input type="text" id="category-search" placeholder="🔍 Buscar categoría (ej. Director, Actriz...)">
+    </div>
   </header>
   <section class="categories">
     <a class="category" href="mejor_pelicula.html">Mejor Película</a>
@@ -153,7 +160,7 @@
     <a class="category" href="mejor_maquillaje_peluqueria.html">Mejor Maquillaje y Peluquería</a>
     <a class="category" href="mejor_efectos_visuales.html">Mejores Efectos Visuales</a>
   </section>
-  <section id="comments-section">
+  <section id="comments-section" class="fade-in-section">
     <h2>💬 Comentarios de Cinéfilos</h2>
     <div id="comments-list"></div>
 
@@ -171,7 +178,7 @@
       <button onclick="addComment()">Enviar comentario</button>
     </div>
   </section>
- <section id="rating-section">
+  <section id="rating-section" class="fade-in-section">
     <h2>⭐ Califica la página</h2>
     <p>¿Qué te pareció esta recopilación de los nominados al Oscar 2024?</p>
     <div id="stars">
@@ -184,5 +191,7 @@
     <p id="rating-message"></p>
   </section>
   <script src="comentarios.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

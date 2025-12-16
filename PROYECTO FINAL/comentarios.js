@@ -7,10 +7,20 @@ const defaultComments = [
   { name: "Emily", country: "Argentina", message: "Las nominaciones estuvieron muy reñidas. ¡Me encanta!" }
 ];
 
-let comments = JSON.parse(localStorage.getItem("comments"));
+let comments = [];
+try {
+  comments = JSON.parse(localStorage.getItem("comments"));
+} catch (e) {
+  console.warn("LocalStorage access failed (likely file:// protocol). using default comments.");
+}
+
 if (!comments || comments.length === 0) {
   comments = defaultComments;
-  localStorage.setItem("comments", JSON.stringify(comments));
+  try {
+    localStorage.setItem("comments", JSON.stringify(comments));
+  } catch (e) {
+    console.warn("Could not save to localStorage.");
+  }
 }
 
 function displayComments() {
@@ -30,7 +40,11 @@ function addComment() {
   if (name && country && message) {
     const newComment = { name, country, message };
     comments.push(newComment);
-    localStorage.setItem("comments", JSON.stringify(comments));
+    try {
+      localStorage.setItem("comments", JSON.stringify(comments));
+    } catch (e) {
+      console.warn("Could not save new comment to localStorage.");
+    }
     displayComments();
 
     console.log("Comentario guardado:", newComment);
@@ -51,7 +65,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const stars = document.querySelectorAll('.star');
   const ratingMessage = document.getElementById('rating-message');
 
-  const savedRating = localStorage.getItem('userRating');
+  let savedRating = null;
+  try {
+    savedRating = localStorage.getItem('userRating');
+  } catch (e) {
+    console.warn("LocalStorage not available for ratings.");
+  }
+
   if (savedRating) {
     highlightStars(savedRating);
     ratingMessage.textContent = `¡Gracias por calificar con ${savedRating} estrella(s)!`;
@@ -60,7 +80,11 @@ window.addEventListener("DOMContentLoaded", () => {
   stars.forEach(star => {
     star.addEventListener('click', () => {
       const value = star.getAttribute('data-value');
-      localStorage.setItem('userRating', value);
+      try {
+        localStorage.setItem('userRating', value);
+      } catch (e) {
+        console.warn("Cannot save rating to localstorage");
+      }
       highlightStars(value);
       ratingMessage.textContent = `¡Gracias por calificar con ${value} estrella(s)!`;
     });
@@ -70,12 +94,11 @@ window.addEventListener("DOMContentLoaded", () => {
     stars.forEach(star => {
       if (parseInt(star.getAttribute('data-value')) <= value) {
         star.classList.add('filled');
-        star.innerHTML = '★'; 
+        star.innerHTML = '★';
       } else {
         star.classList.remove('filled');
-        star.innerHTML = '☆'; 
+        star.innerHTML = '☆';
       }
     });
   }
 });
-  
