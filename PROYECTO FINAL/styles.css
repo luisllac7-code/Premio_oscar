@@ -12,7 +12,8 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* More modern font stack */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* More modern font stack */
   background-color: var(--secondary-black);
   color: var(--text-gold);
   line-height: 1.6;
@@ -62,7 +63,8 @@ body {
   outline: none;
   backdrop-filter: blur(5px);
   transition: all var(--transition-speed);
-  box-sizing: border-box; /* Important for width */
+  box-sizing: border-box;
+  /* Important for width */
 }
 
 #category-search::placeholder {
@@ -80,7 +82,7 @@ body {
   /* Keeps existing layout but adds modern touches */
   background: var(--card-bg);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -92,7 +94,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, transparent 0%, rgba(255,215,0,0.1) 50%, transparent 100%);
+  background: linear-gradient(45deg, transparent 0%, rgba(255, 215, 0, 0.1) 50%, transparent 100%);
   transform: translateX(-100%);
   transition: transform 0.6s;
 }
@@ -145,7 +147,158 @@ body {
   filter: brightness(0.9);
 }
 
-.nominee:hover img {
+
+/* Professional Comment Section Styles */
+#comments-section {
+  background: linear-gradient(to bottom, #111, #000);
+  border-top: 1px solid var(--glass-border);
+}
+
+.comment-card {
+  display: flex;
+  gap: 15px;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.comment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.comment-avatar {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-gold);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.comment-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--primary-gold);
+  font-size: 1.1em;
+}
+
+.comment-meta {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.comment-text {
+  color: #ccc;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+.action-btn:hover {
+  color: var(--primary-gold);
+}
+
+.action-btn.liked {
+  color: #ff4d4d;
+  /* Red for liked state */
+}
+
+.delete-btn:hover {
+  color: #ff4d4d;
+}
+
+/* Updated Form Styles */
+#comment-form {
+  background: var(--glass-bg);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid var(--glass-border);
+  margin-top: 30px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+#comment-form input:focus,
+#comment-form textarea:focus {
+  border-color: var(--primary-gold);
+  outline: none;
+}
+
+#comment-form button {
+  background-color: var(--primary-gold);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+#comment-form button:hover {
+  background-color: #fff;
   transform: scale(1.05);
-  filter: brightness(1.1);
+  box-shadow: 0 0 15px var(--primary-gold);
 }
